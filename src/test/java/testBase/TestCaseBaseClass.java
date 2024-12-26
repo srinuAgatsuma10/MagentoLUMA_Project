@@ -1,20 +1,18 @@
 package testBase;
 
-import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
-import java.sql.Date;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import pageObjectClasses.HomePagePOM;
+import pageObjectClasses.SignInPOM;
 
 public class TestCaseBaseClass {
 	
@@ -51,6 +49,16 @@ public class TestCaseBaseClass {
 		driver.quit();
 	}
 	
+//	@Test
+//	public void signInApp() {
+//		// Sign IN to the Application
+//				HomePagePOM hp = new HomePagePOM(driver);
+//				hp.clickSignIn();
+//				SignInPOM sp = new SignInPOM(driver);;
+//				sp.emailInputBox(prop.getProperty("workingEmail1"));
+//				sp.passwordInputBox(prop.getProperty("we1Password"));
+//				sp.signInbtn();
+//	}
 	
 	// Random Details for Creating New Account
 	public String nameGenerate() {
