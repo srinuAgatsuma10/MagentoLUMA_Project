@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-25T20:08:57 IST" name="Default suite" finished-at="2024-12-25T20:10:44 IST" duration-ms="107204">
+    <groups>
+    </groups>
+    <test started-at="2024-12-25T20:08:57 IST" name="Default test" finished-at="2024-12-25T20:10:44 IST" duration-ms="107204">
+      <class name="testCases.SIgnIN_DataDrivenTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.SIgnIN_DataDrivenTestCase@3c41ed1d]" started-at="2024-12-25T20:08:57 IST" name="setup" finished-at="2024-12-25T20:09:35 IST" duration-ms="38428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signIn_DataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.SIgnIN_DataDrivenTestCase@3c41ed1d]" started-at="2024-12-25T20:09:38 IST" name="signIn_DataDriven" data-provider="SignInData" finished-at="2024-12-25T20:09:48 IST" duration-ms="10152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thundergod123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[alex@nder1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn_DataDriven -->
+        <test-method signature="signIn_DataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.SIgnIN_DataDrivenTestCase@3c41ed1d]" started-at="2024-12-25T20:09:48 IST" name="signIn_DataDriven" data-provider="SignInData" finished-at="2024-12-25T20:10:03 IST" duration-ms="14911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thundergod123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nothing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn_DataDriven -->
+        <test-method signature="signIn_DataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.SIgnIN_DataDrivenTestCase@3c41ed1d]" started-at="2024-12-25T20:10:03 IST" name="signIn_DataDriven" data-provider="SignInData" finished-at="2024-12-25T20:10:18 IST" duration-ms="14547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nothing@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[alex@nder1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn_DataDriven -->
+        <test-method signature="signIn_DataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.SIgnIN_DataDrivenTestCase@3c41ed1d]" started-at="2024-12-25T20:10:18 IST" name="signIn_DataDriven" data-provider="SignInData" finished-at="2024-12-25T20:10:32 IST" duration-ms="14102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nothing@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nothing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn_DataDriven -->
+        <test-method signature="signIn_DataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.SIgnIN_DataDrivenTestCase@3c41ed1d]" started-at="2024-12-25T20:10:32 IST" name="signIn_DataDriven" data-provider="SignInData" finished-at="2024-12-25T20:10:43 IST" duration-ms="11710" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn_DataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.SIgnIN_DataDrivenTestCase@3c41ed1d]" started-at="2024-12-25T20:10:43 IST" name="tearDown" finished-at="2024-12-25T20:10:44 IST" duration-ms="503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.SIgnIN_DataDrivenTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
