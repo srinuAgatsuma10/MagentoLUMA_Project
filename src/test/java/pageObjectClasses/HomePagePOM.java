@@ -35,6 +35,13 @@ public class HomePagePOM extends BasePageObject {
 	@FindBy(xpath = "//div[@aria-hidden='false']//a[normalize-space()='Sign Out']")
 	WebElement SignOutLink;
 	
+	// Search Box Locator
+	@FindBy(xpath = "//input[@id='search']")
+	WebElement searchBox;
+
+	// Search Icon locator
+	@FindBy(xpath = "//button[@title='Search']")
+	WebElement searchIcon;
 	
 	
 	//Action Methods
@@ -53,6 +60,19 @@ public class HomePagePOM extends BasePageObject {
 	
 	public void clickSignOut() {
 		SignOutLink.click();
+	}
+	
+	// Search Box Action Method
+	public void enterProductName(String proName){
+		searchBox.clear();
+		searchBox.sendKeys(proName);
+	}
+
+	// Search Icon Action Method
+	public void clickSearchIcon(){
+		if(searchIcon.isEnabled()) {
+		searchIcon.click();
+		}
 	}
 	
 	
