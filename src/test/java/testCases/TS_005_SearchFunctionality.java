@@ -27,7 +27,8 @@ public class TS_005_SearchFunctionality extends TestCaseBaseClass {
 		
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.enterProductName(prop.getProperty("productName1"));
-		hp.clickSearchIcon();
+		hp.clickSearchIcon(prop.getProperty("productName1"));
+		
 		
 		
 	}

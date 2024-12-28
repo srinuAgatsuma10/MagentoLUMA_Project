@@ -44,6 +44,22 @@ public class HomePagePOM extends BasePageObject {
 	WebElement searchIcon;
 	
 	
+	/*---- HomePagePOM Cart box functionality ----*/
+
+	// Cart Box Locator
+	@FindBy(xpath = "//a[@class='action showcart']")
+	WebElement cartBox;
+
+	//Cart Box action method
+	public void clickCartBox(){
+		cartBox.click();
+	}
+
+
+	/*---- HomePagePOM Cart box functionality ----*/
+	
+	
+	
 	//Action Methods
 	public void clickCreateAcc () {
 		CreateAccLink.click();
@@ -69,10 +85,19 @@ public class HomePagePOM extends BasePageObject {
 	}
 
 	// Search Icon Action Method
-	public void clickSearchIcon(){
+	public void clickSearchIcon(String proName){
+		try {
+			
 		if(searchIcon.isEnabled()) {
 		searchIcon.click();
 		}
+		else {
+			enterProductName(proName);
+			searchIcon.click();
+		}
+		}
+		catch(Exception e) {
+			e.getMessage();		}
 	}
 	
 	
