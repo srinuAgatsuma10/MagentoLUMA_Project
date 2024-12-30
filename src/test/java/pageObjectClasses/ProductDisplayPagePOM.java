@@ -5,7 +5,6 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProductDisplayPagePOM extends BasePageObject{
@@ -35,6 +34,24 @@ public class ProductDisplayPagePOM extends BasePageObject{
 	@FindBy(xpath = "//div[@class='message-success success message']")
 	WebElement successMsgPDP;
 	
+	// Wishlist button
+	@FindBy(xpath = "//div[@class='product-addto-links']//a[@class='action towishlist']")
+	WebElement wishList_Btn;
+
+	//Add compare Button
+	@FindBy(xpath = "//div[@class='product-addto-links']//a[@class='action tocompare']")
+	WebElement addToCompare_Btn;
+
+	// WishList Success Message
+	@FindBy(xpath = "//div(@class='message-success success message')")
+	WebElement wishListSuccess;
+
+	// Product Compare Success Message
+	@FindBy(xpath = "//div(@class='message-success success message')")
+	WebElement productCompareSuccess;
+
+	
+	
 	
 	
 	//Action Methods
@@ -61,6 +78,22 @@ public class ProductDisplayPagePOM extends BasePageObject{
 		catch (Exception e) {
 			return false;
 		}
+	}
+	
+	public void clickWishListBtn(){
+		wishList_Btn.click();
+	}
+
+	public Boolean isWishListSuccessMessage(){
+		return(wishListSuccess.isDisplayed());
+	}
+	
+	public void clickAddToCompareBtn(){
+		addToCompare_Btn.click();
+	}
+	
+	public Boolean isProCompSuccessMessage(){
+		return(productCompareSuccess.isDisplayed());
 	}
 
 }
