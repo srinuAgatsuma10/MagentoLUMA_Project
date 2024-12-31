@@ -43,11 +43,11 @@ public class ProductDisplayPagePOM extends BasePageObject{
 	WebElement addToCompare_Btn;
 
 	// WishList Success Message
-	@FindBy(xpath = "//div(@class='message-success success message')")
+	@FindBy(xpath = "//div[@class='message-success success message']")
 	WebElement wishListSuccess;
 
 	// Product Compare Success Message
-	@FindBy(xpath = "//div(@class='message-success success message')")
+	@FindBy(xpath = "//div[@class='message-success success message']")
 	WebElement productCompareSuccess;
 
 	
@@ -85,7 +85,13 @@ public class ProductDisplayPagePOM extends BasePageObject{
 	}
 
 	public Boolean isWishListSuccessMessage(){
+		try {
 		return(wishListSuccess.isDisplayed());
+		}
+		catch(Exception e) {
+			e.getMessage();
+		}
+		return null;
 	}
 	
 	public void clickAddToCompareBtn(){
@@ -93,7 +99,13 @@ public class ProductDisplayPagePOM extends BasePageObject{
 	}
 	
 	public Boolean isProCompSuccessMessage(){
+		try {
 		return(productCompareSuccess.isDisplayed());
+	}
+	catch(Exception e) {
+		e.getMessage();
+	}
+	return null;
 	}
 
 }
