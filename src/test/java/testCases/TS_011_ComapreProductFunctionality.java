@@ -31,9 +31,14 @@ public class TS_011_ComapreProductFunctionality extends TestCaseBaseClass {
 			hp.clickSearchIcon(prop.getProperty("productName1"));
 			
 			SearchResultsPagePOM srp = new SearchResultsPagePOM(driver);
-			srp.clickOneProduct();
-
+			//srp.clickOneProduct();
+			srp.clickRandomProduct();
+			
 			ProductDisplayPagePOM pdp = new ProductDisplayPagePOM(driver);
+//			//pdp.selectSize();
+//			pdp.clickRandomSize();
+//			//pdp.selectColor();
+//			pdp.clickRandomColor();
 			pdp.clickAddToCompareBtn();
 
 			Boolean successMessage = pdp.isProCompSuccessMessage();

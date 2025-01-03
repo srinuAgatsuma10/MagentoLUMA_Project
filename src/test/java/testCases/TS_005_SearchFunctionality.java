@@ -13,15 +13,15 @@ import testBase.TestCaseBaseClass;
 public class TS_005_SearchFunctionality extends TestCaseBaseClass {
 
 	// SignIn to the Application
-		@BeforeClass
-		public void signIN() {
-			HomePagePOM hp = new HomePagePOM(driver);
-			hp.clickSignIn();
-			SignInPOM sp = new SignInPOM(driver);;
-			sp.emailInputBox(prop.getProperty("workingEmail1"));
-			sp.passwordInputBox(prop.getProperty("we1Password"));
-			sp.signInbtn();
-		}
+//		@BeforeClass
+//		public void signIN() {
+//			HomePagePOM hp = new HomePagePOM(driver);
+//			hp.clickSignIn();
+//			SignInPOM sp = new SignInPOM(driver);;
+//			sp.emailInputBox(prop.getProperty("workingEmail1"));
+//			sp.passwordInputBox(prop.getProperty("we1Password"));
+//			sp.signInbtn();
+//		}
 		
 	@Test
 	public void searchingExistingProduct() {
@@ -33,7 +33,7 @@ public class TS_005_SearchFunctionality extends TestCaseBaseClass {
 		hp.clickSearchIcon(prop.getProperty("productName1"));
 		
 		SearchResultsPagePOM srpm = new SearchResultsPagePOM(driver);
-		if(srpm.resultProductNames().contains("Hoodie"));{
+		if(srpm.resultProductNames().contains("productName1"));{
 			Assert.assertTrue(true);
 		}
 //		else {

@@ -27,12 +27,15 @@ public class TS_007_AddToCartFunctionality extends TestCaseBaseClass{
 			hp.enterProductName(prop.getProperty("productName1"));
 			hp.clickSearchIcon(prop.getProperty("productName1"));
 			
-			SearchResultsPagePOM spm = new SearchResultsPagePOM(driver);
-			spm.clickOneProduct();
+			SearchResultsPagePOM srp = new SearchResultsPagePOM(driver);
+		//	srp.clickOneProduct();   // Click Starting One product
+			srp.clickRandomProduct();   // Click Random product
 			
 			ProductDisplayPagePOM pdp = new ProductDisplayPagePOM(driver);
-			pdp.selectSize();
-			pdp.selectColor();
+			//pdp.selectSize();
+			pdp.clickRandomSize();
+			//pdp.selectColor();
+			pdp.clickRandomColor();
 			pdp.clickAddToCart();
 			
 			Boolean succMsg = pdp.isSuccessMessage();

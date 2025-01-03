@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TS_011_ComapreProductFunctionality">
+      <class name="testCases.TS_007_AddToCartFunctionality">
         <methods>
+          <include name="addProductToCart"/>
           <include name="tearDown"/>
-          <include name="addProductToCompare"/>
           <include name="setup"/>
-          <include name="signIN"/>
         </methods>
-      </class> <!-- testCases.TS_011_ComapreProductFunctionality -->
+      </class> <!-- testCases.TS_007_AddToCartFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

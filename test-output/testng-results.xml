@@ -2,28 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-31T12:25:25 IST" name="Default suite" finished-at="2024-12-31T12:25:44 IST" duration-ms="18590">
+  <suite started-at="2025-01-03T05:52:40 IST" name="Default suite" finished-at="2025-01-03T05:53:32 IST" duration-ms="52681">
     <groups>
     </groups>
-    <test started-at="2024-12-31T12:25:25 IST" name="Default test" finished-at="2024-12-31T12:25:44 IST" duration-ms="18590">
-      <class name="testCases.TS_009_MyWishListFunctionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TS_009_MyWishListFunctionality@217ed35e]" started-at="2024-12-31T12:25:25 IST" name="setup" finished-at="2024-12-31T12:25:30 IST" duration-ms="4871" status="PASS">
+    <test started-at="2025-01-03T05:52:40 IST" name="Default test" finished-at="2025-01-03T05:53:32 IST" duration-ms="52681">
+      <class name="testCases.TS_007_AddToCartFunctionality">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TS_007_AddToCartFunctionality@3c41ed1d]" started-at="2025-01-03T05:52:40 IST" name="setup" finished-at="2025-01-03T05:53:18 IST" duration-ms="38163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="signIN()[pri:0, instance:testCases.TS_009_MyWishListFunctionality@217ed35e]" started-at="2024-12-31T12:25:30 IST" name="signIN" finished-at="2024-12-31T12:25:35 IST" duration-ms="5068" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:testCases.TS_007_AddToCartFunctionality@3c41ed1d]" started-at="2025-01-03T05:53:18 IST" name="addProductToCart" finished-at="2025-01-03T05:53:32 IST" duration-ms="14003" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signIN -->
-        <test-method signature="addProductWishList()[pri:0, instance:testCases.TS_009_MyWishListFunctionality@217ed35e]" started-at="2024-12-31T12:25:35 IST" name="addProductWishList" finished-at="2024-12-31T12:25:43 IST" duration-ms="8199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductWishList -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_009_MyWishListFunctionality@217ed35e]" started-at="2024-12-31T12:25:43 IST" name="tearDown" finished-at="2024-12-31T12:25:44 IST" duration-ms="386" status="PASS">
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_007_AddToCartFunctionality@3c41ed1d]" started-at="2025-01-03T05:53:32 IST" name="tearDown" finished-at="2025-01-03T05:53:32 IST" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TS_009_MyWishListFunctionality -->
+      </class> <!-- testCases.TS_007_AddToCartFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
