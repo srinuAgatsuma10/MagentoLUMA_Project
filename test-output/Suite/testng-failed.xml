@@ -2,15 +2,37 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testCases.TS_009_MyWishListFunctionality">
+      <class name="testCases.TS_007_AddToCartFunctionality">
         <methods>
-          <include name="signIN"/>
-          <include name="tearDown"/>
-          <include name="addProductWishList"/>
-          <include name="setup"/>
+          <include name="addProductToCart"/>
         </methods>
-      </class> <!-- testCases.TS_009_MyWishListFunctionality -->
+      </class> <!-- testCases.TS_007_AddToCartFunctionality -->
+      <class name="testCases.TS_005_SearchFunctionality">
+        <methods>
+          <include name="searchingExistingProduct"/>
+        </methods>
+      </class> <!-- testCases.TS_005_SearchFunctionality -->
+      <class name="testCases.TS_001_CreatingNewAccount">
+        <methods>
+          <include name="CreateNewAccount"/>
+        </methods>
+      </class> <!-- testCases.TS_001_CreatingNewAccount -->
+      <class name="testCases.TS_003_SignOutFromApplication">
+        <methods>
+          <include name="signOutFromApplication"/>
+        </methods>
+      </class> <!-- testCases.TS_003_SignOutFromApplication -->
+      <class name="testCases.TS_002_SignInToTheApplication">
+        <methods>
+          <include name="signInApplication"/>
+        </methods>
+      </class> <!-- testCases.TS_002_SignInToTheApplication -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

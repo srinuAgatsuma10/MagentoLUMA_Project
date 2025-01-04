@@ -23,7 +23,7 @@ public class TS_005_SearchFunctionality extends TestCaseBaseClass {
 //			sp.signInbtn();
 //		}
 		
-	@Test
+	@Test(groups = {"Sanity","Functional","Master"})
 	public void searchingExistingProduct() {
 		
 		try {

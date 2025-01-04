@@ -21,7 +21,7 @@ public class TS_001_CreatingNewAccount extends TestCaseBaseClass {
 //	super(driver);
 //}	
 	
-	@Test
+	@Test(groups = {"Sanity","Functional","Master"})
 	public void CreateNewAccount() {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.clickCreateAcc();

@@ -20,7 +20,7 @@ public class TS_003_SignOutFromApplication extends TestCaseBaseClass {
 		sp.passwordInputBox(prop.getProperty("we1Password"));
 		sp.signInbtn();
 	}
-	@Test
+	@Test(groups = {"Sanity","Functional","Master"})
 	public void signOutFromApplication () throws Exception {
 
 		try {

@@ -20,7 +20,7 @@ public class TS_007_AddToCartFunctionality extends TestCaseBaseClass{
 //				sp.passwordInputBox(prop.getProperty("we1Password"));
 //				sp.signInbtn();
 //			}
-		@Test	
+		@Test(groups = {"Sanity","Functional","Master"})
 		public void addProductToCart() {
 			
 			HomePagePOM hp = new HomePagePOM(driver);

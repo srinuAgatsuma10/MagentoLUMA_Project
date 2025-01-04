@@ -10,7 +10,7 @@ import testBase.TestCaseBaseClass;
 public class TS_002_SignInToTheApplication extends TestCaseBaseClass {
 	
 	
-	@Test
+	@Test(groups = {"Sanity","Functional","Master"})
 	public void signInApplication() {
 		
 		try
