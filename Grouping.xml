@@ -4,19 +4,19 @@
 	<groups>
 		<run>
 			<include name="Sanity"/>
+			<exclude name="Data Driven"/>
 		</run>
 	</groups>
   <test thread-count="5" name="Test">
   <classes>
       <class name="testCases.TS_001_CreatingNewAccount"/>
-      <class name="testCases.TS_002_SignInToTheApplication"/>
-      
-      <class name="testCases.TS_003_SignOutFromApplication"/>
-      
+      <class name="testCases.TS_002_SignInToTheApplication"/>     
       <class name="testCases.TS_005_SearchFunctionality"/>
+      <class name="testCases.TS_003_SignOutFromApplication"/>
       <class name="testCases.TS_007_AddToCartFunctionality"/>
      
-      
+      <!-- Data Driven Test Case 
+      <class name="testCases.SIgnIN_DataDrivenTestCase"/>	-->
 
     </classes>
   </test> <!-- Test -->

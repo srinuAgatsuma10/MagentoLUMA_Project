@@ -27,7 +27,7 @@ public class TestCaseBaseClass {
 	
 	
 	// Setup method to initiate the Driver
-	@BeforeClass(groups = {"Sanity","Functional","Master"})
+	@BeforeClass(groups = {"Sanity","Functional","Master","Data Driven"})
 	public void setup() throws Exception {
 		
 		// Access URL from Properties file
@@ -44,7 +44,7 @@ public class TestCaseBaseClass {
 	}
 	
 	// TearDown method to close the Driver
-	@AfterClass(groups = {"Sanity","Functional","Master"})
+	@AfterClass(groups = {"Sanity","Functional","Master","Data Driven"})
 	public void tearDown() {
 		driver.quit();
 	}

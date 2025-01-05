@@ -1,38 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-04T10:27:43 IST" name="Default suite" finished-at="2025-01-04T10:28:02 IST" duration-ms="19589">
+  <suite started-at="2025-01-04T19:27:16 IST" name="Grouping Suit" finished-at="2025-01-04T19:28:51 IST" duration-ms="94657">
     <groups>
       <group name="Master">
-        <method signature="TS_003_SignOutFromApplication.signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@217ed35e]" name="signOutFromApplication" class="testCases.TS_003_SignOutFromApplication"/>
+        <method signature="TS_002_SignInToTheApplication.signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@5542c4ed]" name="signInApplication" class="testCases.TS_002_SignInToTheApplication"/>
+        <method signature="TS_003_SignOutFromApplication.signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@6a78afa0]" name="signOutFromApplication" class="testCases.TS_003_SignOutFromApplication"/>
       </group> <!-- Master -->
       <group name="Functional">
-        <method signature="TS_003_SignOutFromApplication.signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@217ed35e]" name="signOutFromApplication" class="testCases.TS_003_SignOutFromApplication"/>
+        <method signature="TS_002_SignInToTheApplication.signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@5542c4ed]" name="signInApplication" class="testCases.TS_002_SignInToTheApplication"/>
+        <method signature="TS_003_SignOutFromApplication.signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@6a78afa0]" name="signOutFromApplication" class="testCases.TS_003_SignOutFromApplication"/>
       </group> <!-- Functional -->
       <group name="Sanity">
-        <method signature="TS_003_SignOutFromApplication.signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@217ed35e]" name="signOutFromApplication" class="testCases.TS_003_SignOutFromApplication"/>
+        <method signature="TS_002_SignInToTheApplication.signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@5542c4ed]" name="signInApplication" class="testCases.TS_002_SignInToTheApplication"/>
+        <method signature="TS_003_SignOutFromApplication.signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@6a78afa0]" name="signOutFromApplication" class="testCases.TS_003_SignOutFromApplication"/>
       </group> <!-- Sanity -->
     </groups>
-    <test started-at="2025-01-04T10:27:43 IST" name="Default test" finished-at="2025-01-04T10:28:02 IST" duration-ms="19589">
-      <class name="testCases.TS_003_SignOutFromApplication">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TS_003_SignOutFromApplication@217ed35e]" started-at="2025-01-04T10:27:43 IST" name="setup" finished-at="2025-01-04T10:27:50 IST" duration-ms="7280" status="PASS">
+    <test started-at="2025-01-04T19:27:16 IST" name="Test" finished-at="2025-01-04T19:28:51 IST" duration-ms="94657">
+      <class name="testCases.TS_002_SignInToTheApplication">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TS_002_SignInToTheApplication@5542c4ed]" started-at="2025-01-04T19:27:16 IST" name="setup" finished-at="2025-01-04T19:27:57 IST" duration-ms="40180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="signIN()[pri:0, instance:testCases.TS_003_SignOutFromApplication@217ed35e]" started-at="2025-01-04T10:27:50 IST" name="signIN" finished-at="2025-01-04T10:27:55 IST" duration-ms="4663" status="PASS">
+        <test-method signature="signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@5542c4ed]" started-at="2025-01-04T19:27:57 IST" name="signInApplication" finished-at="2025-01-04T19:28:03 IST" duration-ms="5988" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signIN -->
-        <test-method signature="signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@217ed35e]" started-at="2025-01-04T10:27:55 IST" name="signOutFromApplication" finished-at="2025-01-04T10:28:02 IST" duration-ms="7129" status="PASS">
+        </test-method> <!-- signInApplication -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_002_SignInToTheApplication@5542c4ed]" started-at="2025-01-04T19:28:03 IST" name="tearDown" finished-at="2025-01-04T19:28:03 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TS_002_SignInToTheApplication -->
+      <class name="testCases.TS_003_SignOutFromApplication">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TS_003_SignOutFromApplication@6a78afa0]" started-at="2025-01-04T19:28:03 IST" name="setup" finished-at="2025-01-04T19:28:41 IST" duration-ms="38027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@6a78afa0]" started-at="2025-01-04T19:28:41 IST" name="signOutFromApplication" finished-at="2025-01-04T19:28:51 IST" duration-ms="10058" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testCases.TS_003_SignOutFromApplication.signOutFromApplication(TS_003_SignOutFromApplication.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signOutFromApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_003_SignOutFromApplication@217ed35e]" started-at="2025-01-04T10:28:02 IST" name="tearDown" finished-at="2025-01-04T10:28:02 IST" duration-ms="445" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_003_SignOutFromApplication@6a78afa0]" started-at="2025-01-04T19:28:51 IST" name="tearDown" finished-at="2025-01-04T19:28:51 IST" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TS_003_SignOutFromApplication -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Grouping Suit -->
 </testng-results>

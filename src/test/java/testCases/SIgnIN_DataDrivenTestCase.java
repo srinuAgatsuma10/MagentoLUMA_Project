@@ -10,7 +10,7 @@ import utilities.DataProviders;
 
 public class SIgnIN_DataDrivenTestCase extends TestCaseBaseClass  {
 		
-	@Test(dataProvider="SignInData", dataProviderClass=DataProviders.class)
+	@Test(groups = {"Data Driven"},dataProvider="SignInData", dataProviderClass=DataProviders.class)
 	public void signIn_DataDriven(String email, String pass, String res) throws Exception {
 		
 		
