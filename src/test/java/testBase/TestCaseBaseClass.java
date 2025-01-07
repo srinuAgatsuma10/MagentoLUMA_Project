@@ -1,18 +1,21 @@
 package testBase;
 
 import java.io.FileReader;
+import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.*;
-
-import pageObjectClasses.HomePagePOM;
-import pageObjectClasses.SignInPOM;
+import org.testng.annotations.Parameters;
 
 public class TestCaseBaseClass {
 	
@@ -28,14 +31,53 @@ public class TestCaseBaseClass {
 	
 	// Setup method to initiate the Driver
 	@BeforeClass(groups = {"Sanity","Functional","Master","Data Driven"})
-	public void setup() throws Exception {
+	@Parameters({"os","browser"})
+	public void setup(String os, String br) throws Exception {
 		
 		// Access URL from Properties file
 		FileReader file = new FileReader("./src//test//resources//config.properties");
 		prop = new Properties();
 		prop.load(file);
 		
-		driver = new ChromeDriver();
+		if(prop.getProperty("execution_env").equals("remote")) {
+			
+			DesiredCapabilities capab = new DesiredCapabilities();
+			//OS
+			if(os.equalsIgnoreCase("windows")) {
+			capab.setPlatform(Platform.WIN11);
+			}	
+			else if(os.equalsIgnoreCase("mac")) {
+				capab.setPlatform(Platform.MAC);
+				}	
+			else if(os.equalsIgnoreCase("linux")) {
+				capab.setPlatform(Platform.LINUX);
+				}
+			else {
+				System.out.println("No environment found");
+				return;
+			}
+			
+			//Browser
+			switch(br.toLowerCase()) {
+			case "chrome" : capab.setBrowserName("chrome"); break;
+			case "edge" : capab.setBrowserName("MicrosoftEdge"); break;
+			case "firefox" : capab.setBrowserName("firefox"); break;
+			default : System.out.println("No browser found"); return;
+			}
+			
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capab);
+			
+		}
+		
+		if(prop.getProperty("execution_env").equals("local")) {
+		//driver = new ChromeDriver();
+		switch(br.toLowerCase()) {
+		case "chrome" : driver = new ChromeDriver(); break;
+		case "edge" : driver = new EdgeDriver(); break;
+		case "firefox" : driver = new FirefoxDriver(); break;
+		default : System.out.println("No browser found"); return;
+			}
+		}
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
