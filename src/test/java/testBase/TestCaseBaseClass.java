@@ -28,7 +28,6 @@ public class TestCaseBaseClass {
 //	}
 //	
 	
-	
 	// Setup method to initiate the Driver
 	@BeforeClass(groups = {"Sanity","Functional","Master","Data Driven"})
 	@Parameters({"os","browser"})
@@ -82,7 +81,7 @@ public class TestCaseBaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get(prop.getProperty("url"));
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 	}
 	
 	// TearDown method to close the Driver

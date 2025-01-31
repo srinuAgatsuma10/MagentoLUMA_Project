@@ -17,8 +17,6 @@ public class SIgnIN_DataDrivenTestCase extends TestCaseBaseClass  {
 		try {
 		HomePagePOM hp = new HomePagePOM(driver);
 		hp.clickSignIn();
-		
-		
 			
 		SignInPOM sp = new SignInPOM(driver);;
 		sp.emailInputBox(email);
@@ -30,8 +28,6 @@ public class SIgnIN_DataDrivenTestCase extends TestCaseBaseClass  {
 		
 		Boolean greetings = sp.getWlcomeMessage();		
 		//Assert.assertEquals(greetings, prop.getProperty("user1WelcomeMessage"));
-		
-		
 		
 		// Conditions
 		if(res.equalsIgnoreCase("Valid")) {
@@ -46,8 +42,7 @@ public class SIgnIN_DataDrivenTestCase extends TestCaseBaseClass  {
 			}
 			
 		}
-		
-		
+				
 		if(res.equalsIgnoreCase("Invalid")) {
 			
 			if(greetings == true) {

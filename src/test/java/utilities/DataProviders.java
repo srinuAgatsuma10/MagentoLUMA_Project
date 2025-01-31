@@ -11,7 +11,7 @@ public class DataProviders {
 	@DataProvider(name="SignInData")
 	public String [][] getData() throws Exception
 	{
-		String path=".\\TestData\\SignIn_TestData.xlsx";//taking xl file from testData
+		String path=".\\TestData\\SignIn_TestData.xlsx";//taking excel file from testData
 		
 		ExcelUtility xlutil=new ExcelUtility(path);//creating an object for XLUtility
 		
