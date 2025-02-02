@@ -41,7 +41,7 @@ public class TestCaseBaseClass {
 //	
 	
 	// Setup method to initiate the Driver
-	@BeforeClass(groups = {"Sanity","Functional","Master","Data Driven"})
+	@BeforeClass(groups = {"Sanity","Functional","Master","DataDriven"})
 	@Parameters({"os","browser"})
 	public void setup(String os, String br) throws Exception {
 		
@@ -104,7 +104,7 @@ public class TestCaseBaseClass {
 	}
 	
 	// TearDown method to close the Driver
-	@AfterClass(groups = {"Sanity","Functional","Master","Data Driven"})
+	@AfterClass(groups = {"Sanity","Functional","Master","DataDriven"})
 	public void tearDown() {
 		driver.quit();
 	}
