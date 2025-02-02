@@ -8,76 +8,23 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Parallel Execution</th></tr>
-<tr><td><a href="#t0">FireFoxTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">2,678</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">EdgeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">50,328</td><td></td><td></td></tr>
-<tr><td><a href="#t2">ChromeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">79,286</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">132,292</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Grouping Suit</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">253,556</td><td>Functional</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Execution</th></tr></tbody><tbody id="t0"><tr><th colspan="4">FireFoxTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testCases.TS_002_SignInToTheApplication</td><td><a href="#m0">setup</a></td><td rowspan="1">1736923704685</td><td rowspan="1">2569</td></tr><tr><th colspan="4">FireFoxTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TS_002_SignInToTheApplication</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1736923707316</td><td rowspan="1">0</td></tr><tr><th colspan="4">FireFoxTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TS_002_SignInToTheApplication</td><td><a href="#m2">signInApplication</a></td><td rowspan="1">1736923707301</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">EdgeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TS_002_SignInToTheApplication</td><td><a href="#m3">signInApplication</a></td><td rowspan="1">1736923748635</td><td rowspan="1">4964</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TS_002_SignInToTheApplication</td><td><a href="#m4">signInApplication</a></td><td rowspan="1">1736923778850</td><td rowspan="1">4789</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Grouping Suit</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TS_003_SignOutFromApplication</td><td><a href="#m0">signOutFromApplication</a></td><td rowspan="1">1738494741045</td><td rowspan="1">10022</td></tr><tr class="failedodd"><td rowspan="1">testCases.TS_009_MyWishListFunctionality</td><td><a href="#m1">addProductWishList</a></td><td rowspan="1">1738494801487</td><td rowspan="1">20097</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TS_001_CreatingNewAccount</td><td><a href="#m2">CreateNewAccount</a></td><td rowspan="1">1738494588662</td><td rowspan="1">6482</td></tr><tr class="passedodd"><td rowspan="1">testCases.TS_002_SignInToTheApplication</td><td><a href="#m3">signInApplication</a></td><td rowspan="1">1738494622513</td><td rowspan="1">19502</td></tr><tr class="passedeven"><td rowspan="1">testCases.TS_004_ForgotPasswordFunctionality</td><td><a href="#m4">frogotPassword</a></td><td rowspan="1">1738494769762</td><td rowspan="1">6609</td></tr><tr class="passedodd"><td rowspan="1">testCases.TS_005_SearchFunctionality</td><td><a href="#m5">searchingExistingProduct</a></td><td rowspan="1">1738494673823</td><td rowspan="1">4924</td></tr><tr class="passedeven"><td rowspan="1">testCases.TS_007_AddToCartFunctionality</td><td><a href="#m6">addProductToCart</a></td><td rowspan="1">1738494706400</td><td rowspan="1">11070</td></tr></tbody>
 </table>
-<h2>FireFoxTest</h2><h3 id="m0">testCases.TS_002_SignInToTheApplication#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>windows</td><td>firefox</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: &apos;SRINIVAS-G2005&apos;, ip: &apos;192.168.1.64&apos;
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: firefox, platformName: Windows 11}]}]
-Capabilities {browserName: firefox, platformName: Windows 11}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:152)
-	at testBase.TestCaseBaseClass.setup(TestCaseBaseClass.java:67)
+<h2>Test</h2><h3 id="m0">testCases.TS_003_SignOutFromApplication#signOutFromApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at testCases.TS_003_SignOutFromApplication.signOutFromApplication(TS_003_SignOutFromApplication.java:57)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.TS_002_SignInToTheApplication#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.TS_002_SignInToTheApplication#signInApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: &apos;SRINIVAS-G2005&apos;, ip: &apos;192.168.1.64&apos;
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
-Driver info: driver.version: unknown
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: firefox, platformName: Windows 11}]}]
-Capabilities {browserName: firefox, platformName: Windows 11}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:152)
-	at testBase.TestCaseBaseClass.setup(TestCaseBaseClass.java:67)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TS_009_MyWishListFunctionality#addProductWishList</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.lang.Boolean.booleanValue()&quot; because &quot;successMessage&quot; is null
+	at testCases.TS_009_MyWishListFunctionality.addProductWishList(TS_009_MyWishListFunctionality.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>EdgeTest</h2><h3 id="m3">testCases.TS_002_SignInToTheApplication#signInApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ChromeTest</h2><h3 id="m4">testCases.TS_002_SignInToTheApplication#signInApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.TS_001_CreatingNewAccount#CreateNewAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.TS_002_SignInToTheApplication#signInApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.TS_004_ForgotPasswordFunctionality#frogotPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.TS_005_SearchFunctionality#searchingExistingProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.TS_007_AddToCartFunctionality#addProductToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

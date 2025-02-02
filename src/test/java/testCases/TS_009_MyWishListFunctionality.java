@@ -23,7 +23,7 @@ public class TS_009_MyWishListFunctionality extends TestCaseBaseClass{
 		sp.signInbtn();
 	}
 	
-	@Test
+	@Test(groups = {"Functional","Master"})
 	public void addProductWishList(){
 		// Search Product Functionality
 		HomePagePOM hp = new HomePagePOM(driver);

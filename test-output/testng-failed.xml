@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Parallel Execution]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="FireFoxTest(failed)">
-    <parameter name="os" value="windows"/>
-    <parameter name="browser" value="firefox"/>
+<suite name="Failed suite [Grouping Suit]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Functional"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testCases.TS_002_SignInToTheApplication">
+      <class name="testCases.TS_009_MyWishListFunctionality">
         <methods>
           <include name="tearDown"/>
-          <include name="signInApplication"/>
+          <include name="addProductWishList"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TS_002_SignInToTheApplication -->
+      </class> <!-- testCases.TS_009_MyWishListFunctionality -->
+      <class name="testCases.TS_003_SignOutFromApplication">
+        <methods>
+          <include name="signOutFromApplication"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TS_003_SignOutFromApplication -->
     </classes>
-  </test> <!-- FireFoxTest(failed) -->
-</suite> <!-- Failed suite [Parallel Execution] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Grouping Suit] -->

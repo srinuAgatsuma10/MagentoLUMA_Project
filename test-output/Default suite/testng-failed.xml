@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.SIgnIN_DataDrivenTestCase">
+      <class name="testCases.TS_011_ComapreProductFunctionality">
         <methods>
           <include name="tearDown"/>
-          <include name="signIn_DataDriven"/>
+          <include name="addProductToCompare"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.SIgnIN_DataDrivenTestCase -->
+      </class> <!-- testCases.TS_011_ComapreProductFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

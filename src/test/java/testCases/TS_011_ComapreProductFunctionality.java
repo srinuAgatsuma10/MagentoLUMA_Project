@@ -23,7 +23,7 @@ public class TS_011_ComapreProductFunctionality extends TestCaseBaseClass {
 //			sp.signInbtn();
 //		}
 		
-		@Test
+		@Test(groups = {"Functional","Master"})
 		public void addProductToCompare(){ 
 			// Search Product Functionality
 			HomePagePOM hp = new HomePagePOM(driver);

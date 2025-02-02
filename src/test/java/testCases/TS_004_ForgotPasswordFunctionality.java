@@ -11,7 +11,7 @@ import testBase.TestCaseBaseClass;
 public class TS_004_ForgotPasswordFunctionality extends TestCaseBaseClass {
 		
 	
-		@Test
+		@Test(groups = {"Functional","Master"})
 		public void frogotPassword() {
 			
 			HomePagePOM hp = new HomePagePOM(driver);

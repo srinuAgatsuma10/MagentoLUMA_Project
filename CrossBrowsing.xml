@@ -2,6 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Parallel Execution" thread-count="5" parallel="tests">
   
+   <groups>
+		<run>
+			<include name="Master" />
+			<!--<include name="Sanity" /> -->
+			<!--<include name="Regression" />-->
+			<!--<exclude name="" /> -->
+			<!-- <include name="Datadriven" />-->
+		</run>
+	</groups>
+  
+  
+  <listeners>
+  	<listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  
   <test  name="ChromeTest">
   <parameter name="os" value="windows"/>
   <parameter name="browser" value="chrome"/>
