@@ -55,20 +55,20 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Feb 02 22:21:32 IST 2025</td>
+<td>Started on:</td><td>Sat Feb 15 13:53:19 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>102 seconds (102405 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (120 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>DataDriven </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,30 +76,100 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.SIgnIN_DataDrivenTestCase.signIn_DataDriven()'><b>signIn_DataDriven</b><br>Test class: testCases.SIgnIN_DataDrivenTestCase<br>Parameters: nothing@gmail.com, alex@nder1, Invalid</td>
-<td></td>
-<td>15</td>
-<td>testCases.SIgnIN_DataDrivenTestCase@4116aac9</td></tr>
+<td title='testCases.TS_002_SignInToTheApplication.setup()'><b>setup</b><br>Test class: testCases.TS_002_SignInToTheApplication</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1016363973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1016363973'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1739607799</td>
+<td>testCases.TS_002_SignInToTheApplication@6025e1b6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='testCases.SIgnIN_DataDrivenTestCase.signIn_DataDriven()'><b>signIn_DataDriven</b><br>Test class: testCases.SIgnIN_DataDrivenTestCase<br>Parameters: thundergod123@gmail.com, nothing, Invalid</td>
+<td title='testCases.TS_002_SignInToTheApplication.tearDown()'><b>tearDown</b><br>Test class: testCases.TS_002_SignInToTheApplication</td>
 <td></td>
-<td>14</td>
-<td>testCases.SIgnIN_DataDrivenTestCase@4116aac9</td></tr>
+<td>0</td>
+<td>testCases.TS_002_SignInToTheApplication@6025e1b6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='testCases.SIgnIN_DataDrivenTestCase.signIn_DataDriven()'><b>signIn_DataDriven</b><br>Test class: testCases.SIgnIN_DataDrivenTestCase<br>Parameters: nothing@gmail.com, nothing, Invalid</td>
-<td></td>
-<td>14</td>
-<td>testCases.SIgnIN_DataDrivenTestCase@4116aac9</td></tr>
-<tr>
-<td title='testCases.SIgnIN_DataDrivenTestCase.signIn_DataDriven()'><b>signIn_DataDriven</b><br>Test class: testCases.SIgnIN_DataDrivenTestCase<br>Parameters: , , Invalid</td>
-<td></td>
-<td>11</td>
-<td>testCases.SIgnIN_DataDrivenTestCase@4116aac9</td></tr>
-<tr>
-<td title='testCases.SIgnIN_DataDrivenTestCase.signIn_DataDriven()'><b>signIn_DataDriven</b><br>Test class: testCases.SIgnIN_DataDrivenTestCase<br>Parameters: thundergod123@gmail.com, alex@nder1, Valid</td>
-<td></td>
-<td>11</td>
-<td>testCases.SIgnIN_DataDrivenTestCase@4116aac9</td></tr>
+<td title='testCases.TS_002_SignInToTheApplication.signInApplication()'><b>signInApplication</b><br>Test class: testCases.TS_002_SignInToTheApplication</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1728579441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1728579441'><pre>org.testng.TestNGException: 
+Parameter &apos;os&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TS_002_SignInToTheApplication@6025e1b6</td></tr>
 </table><p>
 </body>
 </html>

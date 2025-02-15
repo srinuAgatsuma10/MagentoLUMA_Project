@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-02T22:26:14 IST" name="Default suite" finished-at="2025-02-02T22:26:14 IST" duration-ms="114">
+  <suite started-at="2025-02-15T13:53:19 IST" name="Suite" finished-at="2025-02-15T13:53:19 IST" duration-ms="120">
     <groups>
       <group name="Master">
-        <method signature="TS_003_SignOutFromApplication.signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@477b4cdf]" name="signOutFromApplication" class="testCases.TS_003_SignOutFromApplication"/>
+        <method signature="TS_002_SignInToTheApplication.signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" name="signInApplication" class="testCases.TS_002_SignInToTheApplication"/>
       </group> <!-- Master -->
       <group name="Functional">
-        <method signature="TS_003_SignOutFromApplication.signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@477b4cdf]" name="signOutFromApplication" class="testCases.TS_003_SignOutFromApplication"/>
+        <method signature="TS_002_SignInToTheApplication.signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" name="signInApplication" class="testCases.TS_002_SignInToTheApplication"/>
       </group> <!-- Functional -->
       <group name="Sanity">
-        <method signature="TS_003_SignOutFromApplication.signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@477b4cdf]" name="signOutFromApplication" class="testCases.TS_003_SignOutFromApplication"/>
+        <method signature="TS_002_SignInToTheApplication.signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" name="signInApplication" class="testCases.TS_002_SignInToTheApplication"/>
       </group> <!-- Sanity -->
     </groups>
-    <test started-at="2025-02-02T22:26:14 IST" name="Default test" finished-at="2025-02-02T22:26:14 IST" duration-ms="114">
-      <class name="testCases.TS_003_SignOutFromApplication">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TS_003_SignOutFromApplication@477b4cdf]" started-at="2025-02-02T22:26:14 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1738515374685" status="FAIL">
+    <test started-at="2025-02-15T13:53:19 IST" name="Test" finished-at="2025-02-15T13:53:19 IST" duration-ms="120">
+      <class name="testCases.TS_002_SignInToTheApplication">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" started-at="2025-02-15T13:53:19 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739607799790" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\ASUS\AppData\Local\Temp\testng-eclipse--1977589592\testng-customsuite.xml]]>
+in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\ASUS\AppData\Local\Temp\testng-eclipse--1977589592\testng-customsuite.xml
+in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:264)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -56,21 +56,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="signIN()[pri:0, instance:testCases.TS_003_SignOutFromApplication@477b4cdf]" started-at="2025-02-02T22:26:14 IST" name="signIN" finished-at="2025-02-02T22:26:14 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signIN -->
-        <test-method signature="signOutFromApplication()[pri:0, instance:testCases.TS_003_SignOutFromApplication@477b4cdf]" started-at="2025-02-02T22:26:14 IST" name="signOutFromApplication" finished-at="2025-02-02T22:26:14 IST" duration-ms="0" status="SKIP">
+        <test-method signature="signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" started-at="2025-02-15T13:53:19 IST" name="signInApplication" finished-at="2025-02-15T13:53:19 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\ASUS\AppData\Local\Temp\testng-eclipse--1977589592\testng-customsuite.xml]]>
+in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\ASUS\AppData\Local\Temp\testng-eclipse--1977589592\testng-customsuite.xml
+in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:264)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -99,12 +95,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signOutFromApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_003_SignOutFromApplication@477b4cdf]" started-at="2025-02-02T22:26:14 IST" name="tearDown" finished-at="2025-02-02T22:26:14 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- signInApplication -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" started-at="2025-02-15T13:53:19 IST" name="tearDown" finished-at="2025-02-15T13:53:19 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TS_003_SignOutFromApplication -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testCases.TS_002_SignInToTheApplication -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
