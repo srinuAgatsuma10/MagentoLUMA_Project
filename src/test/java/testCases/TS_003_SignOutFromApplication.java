@@ -28,11 +28,11 @@ public class TS_003_SignOutFromApplication extends TestCaseBaseClass {
 			
 				// Sign IN to the Application
 		HomePagePOM hp = new HomePagePOM(driver);
-		hp.clickSignIn();
-		SignInPOM sp = new SignInPOM(driver);;
-		sp.emailInputBox(prop.getProperty("workingEmail1"));
-		sp.passwordInputBox(prop.getProperty("we1Password"));
-		sp.signInbtn(); 
+//		hp.clickSignIn();
+//		SignInPOM sp = new SignInPOM(driver);;
+//		sp.emailInputBox(prop.getProperty("workingEmail1"));
+//		sp.passwordInputBox(prop.getProperty("we1Password"));
+//		sp.signInbtn(); 
 
 			// SignOut from the Application
 			hp.clickDrpBtn();
