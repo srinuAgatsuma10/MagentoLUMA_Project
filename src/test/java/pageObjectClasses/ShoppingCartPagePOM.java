@@ -25,6 +25,15 @@ public class ShoppingCartPagePOM extends BasePageObject {
 	
 	
 	// Action Methods
+	public void clickCheckOutBtn() {
+		checkoutBtn.click();
+	}
 	
-	
+	public void clickNextButton() {
+		nextBtn.click();
+	}
+
+	public void clickPlacingOrder() {
+		placeOrderBtn.click();
+	}
 }

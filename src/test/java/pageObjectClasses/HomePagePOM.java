@@ -49,6 +49,10 @@ public class HomePagePOM extends BasePageObject {
 	// View and Edit Cart
 	@FindBy(xpath = "//span[normalize-space()='View and Edit Cart']")
 	WebElement viewEditCart;
+	
+	// Logo Button
+	@FindBy(xpath = "//a[@aria-label='store logo']//img")
+	WebElement logo;
 
 	
 	
@@ -99,4 +103,7 @@ public class HomePagePOM extends BasePageObject {
 		viewEditCart.click();
 	}
 
+	public void clickLogo() {
+		logo.click();
+	}
 }

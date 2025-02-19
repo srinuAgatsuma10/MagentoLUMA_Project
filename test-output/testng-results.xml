@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-15T13:53:19 IST" name="Suite" finished-at="2025-02-15T13:53:19 IST" duration-ms="120">
+  <suite started-at="2025-02-19T22:32:53 IST" name="Suite" finished-at="2025-02-19T22:34:33 IST" duration-ms="99863">
     <groups>
-      <group name="Master">
-        <method signature="TS_002_SignInToTheApplication.signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" name="signInApplication" class="testCases.TS_002_SignInToTheApplication"/>
-      </group> <!-- Master -->
-      <group name="Functional">
-        <method signature="TS_002_SignInToTheApplication.signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" name="signInApplication" class="testCases.TS_002_SignInToTheApplication"/>
-      </group> <!-- Functional -->
-      <group name="Sanity">
-        <method signature="TS_002_SignInToTheApplication.signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" name="signInApplication" class="testCases.TS_002_SignInToTheApplication"/>
-      </group> <!-- Sanity -->
     </groups>
-    <test started-at="2025-02-15T13:53:19 IST" name="Test" finished-at="2025-02-15T13:53:19 IST" duration-ms="120">
-      <class name="testCases.TS_002_SignInToTheApplication">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" started-at="2025-02-15T13:53:19 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739607799790" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2025-02-19T22:32:53 IST" name="Test" finished-at="2025-02-19T22:34:33 IST" duration-ms="99863">
+      <class name="testCases.TS_012_CheckOutPageFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@4c402120]" started-at="2025-02-19T22:32:54 IST" name="setup" finished-at="2025-02-19T22:33:21 IST" duration-ms="27136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="signInApplication()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" started-at="2025-02-15T13:53:19 IST" name="signInApplication" finished-at="2025-02-15T13:53:19 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="CheckOutPage()[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@4c402120]" started-at="2025-02-19T22:33:21 IST" name="CheckOutPage" finished-at="2025-02-19T22:34:32 IST" duration-ms="71613" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml]]>
+              <![CDATA[element click intercepted: Element <button data-role="opc-continue" type="submit" class="button action continue primary">...</button> is not clickable at point (816, 384). Other element would receive the click: <div id="checkout-loader" data-role="checkout-loader" class="loading-mask">...</div>
+  (Session info: chrome=133.0.6943.100)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618383a7e4843ceba2772df05f9ff617, clickElement {id=f.8773216998175D31AE0C9CD26F0A5E6C.d.50ED9106718D9874D57E0F9FED48CFBC.e.421}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58009/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (618383a7e4843ceba2772df05f9ff617)] -> xpath: //button[@class='button action continue primary']]
+Session ID: 618383a7e4843ceba2772df05f9ff617]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\ASUS\eclipse-workspace\MagentoLUMA_Project\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-role="opc-continue" type="submit" class="button action continue primary">...</button> is not clickable at point (816, 384). Other element would receive the click: <div id="checkout-loader" data-role="checkout-loader" class="loading-mask">...</div>
+  (Session info: chrome=133.0.6943.100)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [618383a7e4843ceba2772df05f9ff617, clickElement {id=f.8773216998175D31AE0C9CD26F0A5E6C.d.50ED9106718D9874D57E0F9FED48CFBC.e.421}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58009/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (618383a7e4843ceba2772df05f9ff617)] -> xpath: //button[@class='button action continue primary']]
+Session ID: 618383a7e4843ceba2772df05f9ff617
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+at pageObjectClasses.ShoppingCartPagePOM.clickNextButton(ShoppingCartPagePOM.java:33)
+at testCases.TS_012_CheckOutPageFunctionality.CheckOutPage(TS_012_CheckOutPageFunctionality.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
@@ -92,15 +92,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signInApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_002_SignInToTheApplication@6025e1b6]" started-at="2025-02-15T13:53:19 IST" name="tearDown" finished-at="2025-02-15T13:53:19 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- CheckOutPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@4c402120]" started-at="2025-02-19T22:34:32 IST" name="tearDown" finished-at="2025-02-19T22:34:33 IST" duration-ms="1022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TS_002_SignInToTheApplication -->
+      </class> <!-- testCases.TS_012_CheckOutPageFunctionality -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

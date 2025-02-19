@@ -2,14 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TS_002_SignInToTheApplication">
+      <class name="testCases.TS_012_CheckOutPageFunctionality">
         <methods>
+          <include name="CheckOutPage"/>
           <include name="tearDown"/>
-          <include name="signInApplication"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TS_002_SignInToTheApplication -->
+      </class> <!-- testCases.TS_012_CheckOutPageFunctionality -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
