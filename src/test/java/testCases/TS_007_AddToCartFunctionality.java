@@ -1,25 +1,27 @@
 package testCases;
 
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import pageObjectClasses.HomePagePOM;
 import pageObjectClasses.ProductDisplayPagePOM;
 import pageObjectClasses.SearchResultsPagePOM;
+import pageObjectClasses.SignInPOM;
 import testBase.TestCaseBaseClass;
 
 public class TS_007_AddToCartFunctionality extends TestCaseBaseClass{
 		
-	// SignIn to the Application
-//			@BeforeClass
-//			public void signIN() {
-//				HomePagePOM hp = new HomePagePOM(driver);
-//				hp.clickSignIn();
-//				SignInPOM sp = new SignInPOM(driver);;
-//				sp.emailInputBox(prop.getProperty("workingEmail1"));
-//				sp.passwordInputBox(prop.getProperty("we1Password"));
-//				sp.signInbtn();
-//			}
+	 //SignIn to the Application
+			@BeforeClass
+			public void signIN() {
+				HomePagePOM hp = new HomePagePOM(driver);
+				hp.clickSignIn();
+				SignInPOM sp = new SignInPOM(driver);;
+				sp.emailInputBox(prop.getProperty("workingEmail1"));
+				sp.passwordInputBox(prop.getProperty("we1Password"));
+				sp.signInbtn();
+			}
 		@Test(groups = {"Sanity","Functional","Master"})
 		public void addProductToCart() {
 			

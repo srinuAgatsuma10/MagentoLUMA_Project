@@ -100,7 +100,7 @@ public class TestCaseBaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get(prop.getProperty("url"));
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 	}
 	
 	// TearDown method to close the Driver

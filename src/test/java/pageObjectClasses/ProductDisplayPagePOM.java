@@ -60,6 +60,10 @@ public class ProductDisplayPagePOM extends BasePageObject{
 	@FindBy(xpath = "//div[@class='message-success success message']")
 	WebElement productCompareSuccess;
 	
+	// Navigate to Shoping cart via Success message link
+		@FindBy(xpath="//a[normalize-space()='shopping cart']")
+		WebElement shoppingCartLink;
+	
 	// Big Thumbnail image	//div[@class='fotorama__stage__frame fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img magnify-wheel-loaded fotorama__loaded--full fotorama__active']//img[2]
 	// Left Arrow	//div[@aria-label='Previous']//div[@class='fotorama__arr__arr']
 	// Right Arrow	//div[@aria-label='Next']//div[@class='fotorama__arr__arr']
@@ -148,6 +152,11 @@ public class ProductDisplayPagePOM extends BasePageObject{
 		e.getMessage();
 	}
 	return null;
+	}
+	
+	
+	public void clickShoppingCartLink() {
+		shoppingCartLink.click();
 	}
 
 }

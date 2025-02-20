@@ -10,6 +10,7 @@
           <include name="CheckOutPage"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="signIN"/>
         </methods>
       </class> <!-- testCases.TS_012_CheckOutPageFunctionality -->
     </classes>

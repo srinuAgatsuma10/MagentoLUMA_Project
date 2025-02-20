@@ -1,14 +1,21 @@
 package pageObjectClasses;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ShoppingCartPagePOM extends BasePageObject {
 
 	public ShoppingCartPagePOM(WebDriver driver) {
 		super(driver);
 	}
+	
+	// Explicit Wait
+		WebDriverWait myWait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	// WebElements
 	// Proceed to checkout
@@ -26,14 +33,20 @@ public class ShoppingCartPagePOM extends BasePageObject {
 	
 	// Action Methods
 	public void clickCheckOutBtn() {
-		checkoutBtn.click();
+		WebElement checkoutClick = myWait.until(ExpectedConditions.elementToBeClickable(checkoutBtn));
+		checkoutClick.click();
+		//checkoutBtn.click();
 	}
 	
 	public void clickNextButton() {
-		nextBtn.click();
+		WebElement nextBtnClick = myWait.until(ExpectedConditions.elementToBeClickable(nextBtn));
+		nextBtnClick.click();
+		//nextBtn.click();
 	}
 
 	public void clickPlacingOrder() {
-		placeOrderBtn.click();
+		WebElement placeorderClick = myWait.until(ExpectedConditions.elementToBeClickable(placeOrderBtn));
+		placeorderClick.click();
+		//placeOrderBtn.click();
 	}
 }

@@ -2,6 +2,7 @@ package pageObjectClasses;
 
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,12 +44,16 @@ public class HomePagePOM extends BasePageObject {
 	WebElement searchIcon;
 
 	// Cart Box Locator
-	@FindBy(xpath = "//a[@class='action showcart']")
+	@FindBy(xpath = "//a[@class='action showcart active']")
 	WebElement cartBox;
 	
 	// View and Edit Cart
-	@FindBy(xpath = "//span[normalize-space()='View and Edit Cart']")
+	@FindBy(xpath = "//button[@id='top-cart-btn-checkout']")//a[@class='action viewcart']
 	WebElement viewEditCart;
+	
+	// Navigate to Shoping cart via Success message link\
+	@FindBy(xpath="//a[normalize-space()='shopping cart']")
+	WebElement shoppingCartLink;
 	
 	// Logo Button
 	@FindBy(xpath = "//a[@aria-label='store logo']//img")
@@ -96,7 +101,14 @@ public class HomePagePOM extends BasePageObject {
 	}
 
 	public void clickCartBox() {
-		cartBox.click();
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", cartBox);
+		
+//		WebElement cartBoxClick = myWait.until(ExpectedConditions.elementToBeClickable(cartBox));
+//		cartBoxClick.click();
+//		cartBox.click();
+		
 	}
 	
 	public void editCartBtn() {
@@ -105,5 +117,9 @@ public class HomePagePOM extends BasePageObject {
 
 	public void clickLogo() {
 		logo.click();
+	}
+	
+	public void clickShoppingCartLink() {
+		shoppingCartLink.click();
 	}
 }

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-19T22:32:53 IST" name="Suite" finished-at="2025-02-19T22:34:33 IST" duration-ms="99863">
+  <suite started-at="2025-02-20T19:54:40 IST" name="Suite" finished-at="2025-02-20T20:00:56 IST" duration-ms="375373">
     <groups>
     </groups>
-    <test started-at="2025-02-19T22:32:53 IST" name="Test" finished-at="2025-02-19T22:34:33 IST" duration-ms="99863">
+    <test started-at="2025-02-20T19:54:40 IST" name="Test" finished-at="2025-02-20T20:00:56 IST" duration-ms="375373">
       <class name="testCases.TS_012_CheckOutPageFunctionality">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@4c402120]" started-at="2025-02-19T22:32:54 IST" name="setup" finished-at="2025-02-19T22:33:21 IST" duration-ms="27136" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@233795b6]" started-at="2025-02-20T19:54:40 IST" name="setup" finished-at="2025-02-20T19:56:28 IST" duration-ms="107595" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,29 +23,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="CheckOutPage()[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@4c402120]" started-at="2025-02-19T22:33:21 IST" name="CheckOutPage" finished-at="2025-02-19T22:34:32 IST" duration-ms="71613" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method is-config="true" signature="signIN()[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@233795b6]" started-at="2025-02-20T19:56:28 IST" name="signIN" finished-at="2025-02-20T19:56:36 IST" duration-ms="8185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIN -->
+        <test-method signature="CheckOutPage()[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@233795b6]" started-at="2025-02-20T19:56:36 IST" name="CheckOutPage" finished-at="2025-02-20T20:00:55 IST" duration-ms="258548" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <button data-role="opc-continue" type="submit" class="button action continue primary">...</button> is not clickable at point (816, 384). Other element would receive the click: <div id="checkout-loader" data-role="checkout-loader" class="loading-mask">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='button action continue primary']"}
   (Session info: chrome=133.0.6943.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [618383a7e4843ceba2772df05f9ff617, clickElement {id=f.8773216998175D31AE0C9CD26F0A5E6C.d.50ED9106718D9874D57E0F9FED48CFBC.e.421}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58009/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (618383a7e4843ceba2772df05f9ff617)] -> xpath: //button[@class='button action continue primary']]
-Session ID: 618383a7e4843ceba2772df05f9ff617]]>
+Command: [e6df4379711c5d4818b1811ea2589da7, findElement {value=//button[@class='button action continue primary'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57872/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6df4379711c5d4818b1811ea2589da7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-role="opc-continue" type="submit" class="button action continue primary">...</button> is not clickable at point (816, 384). Other element would receive the click: <div id="checkout-loader" data-role="checkout-loader" class="loading-mask">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='button action continue primary']"}
   (Session info: chrome=133.0.6943.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [618383a7e4843ceba2772df05f9ff617, clickElement {id=f.8773216998175D31AE0C9CD26F0A5E6C.d.50ED9106718D9874D57E0F9FED48CFBC.e.421}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58009/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (618383a7e4843ceba2772df05f9ff617)] -> xpath: //button[@class='button action continue primary']]
-Session ID: 618383a7e4843ceba2772df05f9ff617
+Command: [e6df4379711c5d4818b1811ea2589da7, findElement {value=//button[@class='button action continue primary'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.100, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57872/devtoo..., se:cdpVersion: 133.0.6943.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6df4379711c5d4818b1811ea2589da7
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -56,14 +60,15 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
 at pageObjectClasses.ShoppingCartPagePOM.clickNextButton(ShoppingCartPagePOM.java:33)
-at testCases.TS_012_CheckOutPageFunctionality.CheckOutPage(TS_012_CheckOutPageFunctionality.java:40)
+at testCases.TS_012_CheckOutPageFunctionality.CheckOutPage(TS_012_CheckOutPageFunctionality.java:55)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -92,11 +97,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckOutPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@4c402120]" started-at="2025-02-19T22:34:32 IST" name="tearDown" finished-at="2025-02-19T22:34:33 IST" duration-ms="1022" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TS_012_CheckOutPageFunctionality@233795b6]" started-at="2025-02-20T20:00:55 IST" name="tearDown" finished-at="2025-02-20T20:00:56 IST" duration-ms="1007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
